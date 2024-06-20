@@ -25,7 +25,7 @@ export default function Footer() {
                                 socialLinks?.map((item) => {
                                     return (
                                         <div className="bg-slate-800 h-10 w-10 flex items-center justify-center rounded-xl" >
-                                            {item?.icon}
+                                            <span className={`mdi mdi-${item.icon}`} />
                                         </div>
                                     )
                                 })
@@ -53,19 +53,19 @@ export default function Footer() {
 
 const socialLinks = [
     {
-        icon: <ion-icon name="logo-facebook"></ion-icon>,
+        icon: 'facebook',
         link: ''
     },
     {
-        icon: <ion-icon name="logo-instagram"></ion-icon>,
+        icon: 'instagram',
         link: ''
     },
     {
-        icon: <ion-icon name="logo-twitter"></ion-icon>,
+        icon: 'twitter',
         link: ''
     },
     {
-        icon: <ion-icon name="mail-outline"></ion-icon>,
+        icon: 'email',
         link: ''
     }
 ]
