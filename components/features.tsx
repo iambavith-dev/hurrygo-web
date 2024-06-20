@@ -4,11 +4,11 @@ export default function Features() {
             <div className="max-w-screen-lg w-full flex flex-col items-center" >
                 <h1 className="text-2xl font-medium flex flex-row items-center gap-3" >Why choose <span className="text-blue-500 font-semibold underline" >HurryGo?</span> </h1>
 
-                <div className="grid  grid-cols-3 w-full gap-3 mt-10" >
+                <div className="grid grig-cols-1 lg:grid-cols-3 w-full gap-3 mt-10" >
                     {
                         features?.map((item, index) => {
                             return (
-                                <div className="p-4 flex items-center rounded-2xl flex-col gap-1" >
+                                <div className="p-4 flex items-center rounded-2xl flex-col gap-1" key={`feature_${index}`} >
                                     <div className="h-16 w-16 bg-blue-500 rounded-full flex items-center justify-center" >
                                         {item?.icon}
                                     </div>
