@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import admin from 'firebase-admin'
 
-const serviceAccount = process?.env?.FCM_SECRET
+const serviceAccount = process?.env?.FCM_SECRET as any
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
