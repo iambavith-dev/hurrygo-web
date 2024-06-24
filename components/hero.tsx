@@ -13,7 +13,7 @@ export default function Hero() {
                             <h1 className="text-3xl font-semibold md:text-5xl" >at your fingertips.</h1>
                         </div>
                         <div className="w-36" >
-                            <Link href="https://play.google.com/store/apps/details?id=in.hurrygo.driver" target="_blank" >
+                            <Link href="https://play.google.com/store/apps/details?id=in.hurrygo" target="_blank" >
                                 <img src="/img/get-on-play.png" className="h-16 -ml-3 md:h-24" />
                             </Link>
                         </div>

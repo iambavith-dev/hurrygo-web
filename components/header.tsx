@@ -11,7 +11,7 @@ export default function Header() {
                     <Link href={'/'} className="font-normal hover:font-medium text-xs lg:text-base hover:text-blue-500 cursor-pointer hidden lg:visible" >Contact us</Link>
                 </div>
                 <div>
-                    <button className="bg-blue-500 px-3 lg:px-5 py-2 lg:py-2.5 rounded-full text-white text-xs lg:text-sm font-light lg:font-medium" >Download</button>
+                    <button onClick={() => { window.open('https://play.google.com/store/apps/details?id=in.hurrygo') }} className="bg-blue-500 px-3 lg:px-5 py-2 lg:py-2.5 rounded-full text-white text-xs lg:text-sm font-light lg:font-medium" >Download</button>
                 </div>
             </div>
         </nav>

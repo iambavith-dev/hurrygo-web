@@ -9,7 +9,7 @@ export default function Footer() {
                         <p className="text-white font-normal" >Unlock Your Dream Ride: Your Auto Booking Destination</p>
                         <p className="text-white font-semibold text-3xl mt-2" >Download the App Now!</p>
                     </div>
-                    <Link href="https://play.google.com/store/apps/details?id=in.hurrygo.driver" target="_blank" className="cursor-pointer z-10" >
+                    <Link href="https://play.google.com/store/apps/details?id=in.hurrygo" target="_blank" className="cursor-pointer z-10" >
                         <img src="/img/get-on-play.png" className="h-24" />
                     </Link>
                     <div className="h-full w-full hero absolute opacity-20 -mt-8 overflow-hidden " />
