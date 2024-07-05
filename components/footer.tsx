@@ -15,7 +15,7 @@ export default function Footer() {
                     <div className="h-full w-full hero absolute opacity-20 -mt-8 overflow-hidden " />
                 </div>
             </div>
-            <div className="py-2 bg-slate-900 w-full -mt-24 h-[450px] pt-40" >
+            <div className="py-2 bg-slate-900 w-full -mt-24 h-[450px] pt-40 flex flex-col items-center" >
                 <div className="max-w-screen-lg w-full flex flex-col items-start px-10" >
                     <div>
                         <img src="/img/header.png" className="h-8" />
@@ -24,9 +24,9 @@ export default function Footer() {
                             {
                                 socialLinks?.map((item, index) => {
                                     return (
-                                        <div className="bg-slate-800 h-10 w-10 flex items-center justify-center rounded-xl" key={`social_${index}`} >
+                                        <Link href={item?.link} target="__blank" className="bg-slate-800 h-10 w-10 flex items-center justify-center rounded-xl" key={`social_${index}`} >
                                             <span className={`mdi mdi-${item.icon}`} />
-                                        </div>
+                                        </Link>
                                     )
                                 })
                             }
@@ -52,20 +52,20 @@ export default function Footer() {
 }
 
 const socialLinks = [
-    {
-        icon: 'facebook',
-        link: ''
-    },
+    // {
+    //     icon: 'facebook',
+    //     link: ''
+    // },
     {
         icon: 'instagram',
-        link: ''
+        link: 'https://www.instagram.com/hurrygo_app/'
     },
-    {
-        icon: 'twitter',
-        link: ''
-    },
+    // {
+    //     icon: 'twitter',
+    //     link: ''
+    // },
     {
         icon: 'email',
-        link: ''
+        link: 'mailto:contact@hurrygo.in'
     }
 ]
